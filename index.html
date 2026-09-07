@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#160b12">
+  <title>LUANA XIAO — Uma história para você</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="petals"></div>
+  <div class="lanterns" aria-hidden="true"><span>🏮</span><span>🏮</span><span>🏮</span></div>
+  <header class="topbar">
+    <div class="seal">福</div>
+    <nav class="main-nav">
+      <a href="#inicio">Início</a><a href="#retrospectiva">Retrospectiva</a><a href="#calendario">Calendário</a><a href="#jogo">Jogo</a>
+    </nav>
+    <button id="musicBtn" class="icon-btn" aria-label="Tocar ou pausar música">♫</button>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="moon"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow">uma pequena história feita para você</p>
+        <h1>卢安娜·肖</h1>
+        <p class="subtitle">Antes de qualquer coisa, quero que você saiba uma coisa...</p>
+        <p class="hero-line">Essa história é sobre você.</p>
+        <button class="gold-btn" data-scroll="#comeco">Começar nossa história <span>↓</span></button>
+      </div>
+    </section>
+
+    <section class="intro section" id="comeco">
+      <div class="ornament">✦</div>
+      <p class="kicker">COMO TUDO COMEÇOU</p>
+      <h2>Aqui começou tudo.</h2>
+      <p class="text">Foi em 2019, por causa do Blox Strike. Eu estava naquele grupo do clã com o Italo e o irmão da Maria, aí colocaram você no grupo. Eu mandei mensagem no seu privado e logo depois falei: “olha gostei muito de você quer namorar cmg ?”. Você respondeu “mais você nem me conhece” e foi assim que tudo começou. Eu te apressei pra responder e você acabou falando que sim.</p>
+      <p class="text">Depois disso eu ficava mandando aqueles textões enormes falando que te amava. Também lembro de você levando uma picada de abelha e de várias conversas aleatórias que a gente tinha.</p>
+      <p class="text">Eu lembro até das conversas sobre sua mãe fazer bolo de fruta e dessas coisas simples que hoje parecem pequenas, mas que ficaram na minha cabeça. Era muito assunto aleatório e mesmo assim eu gostava de ficar conversando com você.</p>
+    </section>
+
+    <section class="journey section" id="retrospectiva">
+      <div class="section-heading"><p class="kicker">RETROSPECTIVA</p><h2>De 2019 até o começo de 2023.</h2><p>Eu só quero deixar aqui algumas das coisas que eu lembro.</p></div>
+      <div class="timeline">
+        <article class="timeline-card"><span>2019</span><div><h3>Foi assim que a gente se conheceu</h3><p>Foi em 2019, por causa do Blox Strike. Eu estava naquele grupo do clã com o Italo e o irmão da Maria, aí colocaram você no grupo. Eu mandei mensagem no seu privado e logo depois falei: “olha gostei muito de você quer namorar cmg ?”. Você respondeu “mais você nem me conhece” e foi assim que tudo começou. Eu te apressei pra responder e você acabou falando que sim.</p></div></article>
+        <article class="timeline-card"><span>2020</span><div><h3>O clã e aquela época</h3><p>Eu e o Italo ficávamos tentando fazer o clã virar alguma coisa. Até gastei R$200 no Blox Strike com isso kkkkk. Eu estava muito feliz naquela época e tenho muita lembrança boa desse tempo.</p></div></article>
+        <article class="timeline-card"><span>2021</span><div><h3>Roblox todo dia</h3><p>Depois vieram o Crys e a Luisa, a Pamonha. A gente jogava Roblox praticamente todo dia. Eu tinha preconceito com Roblox e você me fez jogar Adopt Me e Marretão kkkkk. Era praticamente todo dia jogando e conversando.</p></div></article>
+        <article class="timeline-card"><span>2022</span><div><h3>As conversas e as lembranças</h3><p>Eu lembro das nossas conversas sobre a escola, sobre sua mãe fazer bolo de fruta e de vários assuntos aleatórios que a gente ficava falando. Eu gostava muito dessas conversas, mesmo quando era só besteira kkkkk.</p></div></article>
+        <article class="timeline-card"><span>2023</span><div><h3>Até o começo de 2023</h3><p>Foi uma época que passou rápido, mas deixou muita coisa. O Crys, a Luisa, o Italo, a Maria, a Heloisa e você fazem parte dessas lembranças.</p></div></article>
+      </div>
+      <div class="timeline-card after-card"><span>2024</span><div><h3>Você terminou comigo</h3><p>Em 2024 você terminou comigo. Eu não lembro direito o motivo e não quero inventar uma coisa que talvez nem tenha sido assim. Só sei que depois disso a vida foi ficando cada vez mais doida e muita coisa mudou.</p><p>Hoje estou treinando e estudando pra chegar onde eu tinha falado lá no começo que queria chegar: ser policial militar.</p></div></div>
+    </section>
+
+    <section class="zodiac section" id="calendario">
+      <div class="section-heading"><p class="kicker">CALENDÁRIO CHINÊS</p><h2>2019 — 2026</h2><p>Agora deixei só os anos que fazem parte dessa história.</p></div>
+      <div id="zodiacGrid" class="zodiac-grid"></div>
+      <div id="messageBox" class="message-box" aria-live="polite"><div class="message-seal">福</div><p class="message-hint">Escolha um ano</p></div>
+    </section>
+
+    <section class="game-section section" id="jogo">
+      <div class="section-heading"><p class="kicker">UM JOGUINHO</p><h2></h2><p>O dragão vai crescendo aos poucos. Pegue as maçãs e tente fazer a maior pontuação.</p></div>
+      <div class="game-wrap">
+        <div class="game-stats"><span>Pontos: <strong id="score">0</strong></span><span>Recorde: <strong id="highScore">0</strong></span></div>
+        <canvas id="dragonGame" aria-label="Jogo do dragão chinês"></canvas>
+        <button id="startGame" class="gold-btn game-start">Começar</button>
+        <div class="touch-controls" aria-label="Controles do jogo"><button data-dir="up">▲</button><div><button data-dir="left">◀</button><button data-dir="down">▼</button><button data-dir="right">▶</button></div></div>
+        <p class="game-help">Use as setas ou WASD. No celular, use os botões.</p>
+      </div>
+    </section>
+
+    <section class="letter section">
+      <div class="paper"><p class="kicker">UMA CARTA PARA VOCÊ</p><h2>Luana,</h2>
+        <p>Eu te amei muito. Muito mesmo. Obrigado por tudo.</p>
+        <p>Eu fui muito feliz naquela época e guardo muita coisa boa de tudo que a gente viveu e conversou.</p>
+        <p>Queria agradecer também o Italo, a Luisa, o Crys, a Heloisa, a Maria e o seu ex-namorado. Acho que era Luan ou João, não lembro direito, o menino lá do RJ. Ele era gente boa demais também.</p>
+        <p>Te desejo tudo de melhor. E se um dia você precisar de alguma coisa, pode contar comigo. Não porque você foi minha namorada, mas porque você foi e continua sendo uma pessoa muito querida pra mim.</p>
+        <p>E sim, comecei a assistir Viki por sua causa e agora estou viciado em séries e doramas kkkkk. Só não tenho muito tempo pra assistir.</p>
+        <p class="big-thanks">Obrigado por tudo.</p>
+      </div>
+    </section>
+
+    <section class="finale section"><div class="final-glow"></div><div class="final-content"><p class="kicker">E SE UM DIA VOCÊ ESQUECER...</p><h2>lembre-se disso:</h2><p class="final-quote">“Você foi importante.<br>Você foi especial.<br>Você fez alguém muito feliz.”</p><p class="final-small">E uma parte da minha história sempre vai carregar o seu nome.</p><div class="final-name">LUANA XIAO</div><div class="closing">Obrigado por tudo.</div></div></section>
+  </main>
+
+  <audio id="bgMusic" loop preload="none"><source src="assets/Escrevi sobre você - Magyn (youtube).mp3" type="audio/mpeg"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
